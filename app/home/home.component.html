@@ -1,0 +1,24 @@
+<ActionBar title="WorkHealthness" class="action-bar" ></ActionBar>
+
+<FlexboxLayout class="page" flexDirection="column">
+    <FlexboxLayout class="" flexDirection="row">
+        <StackLayout flexGrow="1" margin="12" (tap)="newOpportunities()">
+            <Image src="res://wood_messages" height="80%"></Image>
+            <Label text="Opportunities" horizontalAlignment="center" fontSize="22" style="font-style:italic"></Label>
+        </StackLayout>
+        <StackLayout flexGrow="1" margin="12" (tap)="mySubscriptions()">
+            <Image src="res://wood_reminders" height="80%"></Image>
+            <Label text="My alerts" horizontalAlignment="center" fontSize="22" style="font-style:italic"></Label>
+        </StackLayout>
+    </FlexboxLayout>
+    <FlexboxLayout class="" flexDirection="row">
+        <StackLayout flexGrow="1" margin="12" (tap)="playNewGame()">
+            <Image src="res://wood_game" height="80%"></Image>
+            <Label text="New game!" horizontalAlignment="center" fontSize="22" style="font-style:italic"></Label>
+        </StackLayout>
+        <StackLayout flexGrow="1" margin="12" (tap)="profile()">
+            <Image src="res://wood_settings" height="80%"></Image>
+            <Label text="Settings" horizontalAlignment="center" fontSize="22" style="font-style:italic"></Label>
+        </StackLayout>
+    </FlexboxLayout>
+</FlexboxLayout>

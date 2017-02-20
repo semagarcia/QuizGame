@@ -1,0 +1,19 @@
+<ActionBar title="WorkHealthness" class="action-bar" >
+    <NavigationButton text="Go Back" android.systemIcon="ic_menu_back" (tap)="back()"></NavigationButton>
+</ActionBar>
+
+<StackLayout>
+    <FlexboxLayout flexDirection="row">
+        <TextView [(ngModel)]="filterCriteria.text" hint="Write here to filter..." flexGrow="3" (returnPress)="clearSearchField()"></TextView>
+        <Button text="Clear" (tap)="clearSearchField()" flexGrow="1"></Button>
+    </FlexboxLayout>
+    <ListView [items]="opportunities" (itemTap)="onItemTap($event)">
+        <template let-item="item" let-i="index" let-odd="odd" let-even="even">
+            <StackLayout [class.odd]="odd" [class.even]="even">
+                <Label [text]='"index: " + i'></Label>
+                <Label [text]='"[" + item.id +"] " + item.name'></Label>
+            </StackLayout>
+        </template>
+    </ListView>
+</StackLayout>
+
