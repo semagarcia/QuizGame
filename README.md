@@ -1,2 +1,2 @@
-# WorkHealthness
-An app to measure the happiness of employees
+# QuizGame
+An app to play or to organise a quiz game
